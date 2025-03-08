@@ -1073,14 +1073,16 @@ body{
 		transform: translate(-50%, -50%);
 		z-index: 99999 !important;
 	}
+
 	.magazine-viewport {
-		
-		width: 70rem !important;
+	
+		width: 100% !important;
 		/* border: 3px solid #1d751a; */
 		position: absolute;
 		inset: 0; /* Esto establece top, right, bottom y left en 0 */
 		margin: auto; /* Centra el elemento automáticamente */
 		overflow-x: scroll;
+
 	}
 	.magazine{
 		 top: -80% !important;
@@ -1088,8 +1090,8 @@ body{
 		scale: 1.6;
 		/* top: 50% !important; */
 		/* top: -150% !important; */
-        left: 10% !important;
-		
+        left: -25% !important;
+		/* transform: translate(15%, 0%)!important; */
 	} 
 
 

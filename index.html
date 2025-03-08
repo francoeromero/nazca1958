@@ -26,7 +26,7 @@
 
 </head>
 <body>
-<div id="canvas">
+<div id="canvas" class="canvas">
 
 <div class="zoom-icon zoom-icon-in"></div>
 
@@ -81,7 +81,7 @@
 </div>
 
 
- <div class="loading-page" style="display: none;">
+<div class="loading-page" >
 	<svg class="logoEmpresa"  xmlns="http://www.w3.org/2000/svg" width="645" height="1080" viewBox="0 0 645 1080">
 		<defs>
 
@@ -104,9 +104,52 @@
 </div> 
 
 
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
     integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+<script>
+gsap.fromTo(
+	".loading-page",
+	{ opacity: 1 },
+	{
+	  opacity: 0,
+	  display: "none",
+	  duration: 1.5,
+	  delay: 3,
+	}
+  );
+  
+  gsap.fromTo(
+	".logo-name",
+	{
+	  y: 50,
+	  opacity: 0,
+	},
+	{
+	  y: 0,
+	  opacity: 1,
+	  duration: 2,
+	  delay: 0.5,
+	}
+  );
+  
+  gsap.fromTo(
+	".logo-parrafo",
+	{
+	  y: 50,
+	  opacity: 0,
+	},
+	{
+	  y: 0,
+	  opacity: 1,
+	  duration: 2,
+	  delay: 0.5,
+	}
+  );
+  
+</script>
 
 <script type="text/javascript">
 flechas = document.getElementById('flechas')

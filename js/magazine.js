@@ -119,12 +119,15 @@ function cargarWebp_1(ruta){
 	});
 	return cargarGif
 }
+
+
+
 function cargarWebp_2(ruta){
 	let cargarGif = $('<div></div>').css({
 		// Definir el ancho del cuadrado en 100 píxeles
 		width: '80%',
 		// Definir la altura del cuadrado en 100 píxeles
-		height: '65%',
+		height: '55%',
 		// Asignar el fondo rojo al cuadrado
 		background: `url(${ruta}) no-repeat center center`,
 		backgroundSize: 'cover',
@@ -132,7 +135,7 @@ function cargarWebp_2(ruta){
 		// Posicionar el cuadrado de forma absoluta dentro del contenedor
 		position: 'absolute',
 		// Colocar el cuadrado en la parte superior del contenedor
-		top: '62%',
+		top: '70%',
 		// border: '3px solid white',
 		// Colocar el cuadrado en la esquina izquierda del contenedor
 		left: '53%',
@@ -142,6 +145,32 @@ function cargarWebp_2(ruta){
 	});
 	return cargarGif
 }
+function cargarWebp_3(ruta){
+	let cargarGif = $('<div></div>').css({
+		// Definir el ancho del cuadrado en 100 píxeles
+		width: '80%',
+		// Definir la altura del cuadrado en 100 píxeles
+		height: '69%',
+		// Asignar el fondo rojo al cuadrado
+		background: `url(${ruta}) no-repeat center center`,
+		backgroundSize: 'cover',
+		zIndex: '999',
+		// Posicionar el cuadrado de forma absoluta dentro del contenedor
+		position: 'absolute',
+		// Colocar el cuadrado en la parte superior del contenedor
+		top: '63%',
+		// border: '3px solid white',
+		// Colocar el cuadrado en la esquina izquierda del contenedor
+		left: '53%',
+		// Asegurar que el cuadrado se superponga a otros elementos mediante un z-index alto
+		transform: 'translate(-50%,-50%)',
+		zIndex: '1000'
+	});
+	return cargarGif
+}
+
+
+
 function cargarGif_2(rutaUno,rutaDos){
 	let contenedor = $('<div></div>').css({
 		width: '100%',
@@ -465,6 +494,40 @@ function cargarMp4(ruta,escala,posicionX,posicionY){
 	contenedorVideo.append(cargarVideo);
 	return contenedorVideo
 }
+function cargarMp4_2(ruta,escala,posicionX,posicionY){
+	let contenedorVideo = $('<div></div>').css({
+		width: '56%',
+		height: '46%',
+		left: posicionX,
+		top: posicionY,
+		position: 'absolute',
+		transform: 'translate(-50%, -50%)',
+		zIndex: '9999999', 
+		overflow: 'hidden',
+		display: 'flex',
+		justifyContent: 'center',
+		alignItems: 'center',
+		background: 'rgba(255, 255, 255, 0.9)',
+		alignItems: 'center',
+		zIndex:'999999',
+		objectFit: 'contain',
+		backgroundSize: 'cover',
+		scale: escala
+	});
+
+	let cargarVideo = $('<video></video>')
+	.attr('src', ruta)
+	.attr('controls', true)
+	.attr('autoplay', true)
+	.attr('muted', true) 
+	.css({
+		width: '105%',
+		height: '105%',
+		
+	});
+	contenedorVideo.append(cargarVideo);
+	return contenedorVideo
+}
 
 let flag_responsivo = true;
 function checkResponsive(){
@@ -532,10 +595,46 @@ function addPage(page, book) {
 		if (/iPhone/i.test(navigator.userAgent)){
 			if(page == 29){
 				if(flag_responsivo == false){
-					webp = cargarMp4(lista_mp4[0],'1.45','64%','79%');
-					element.append(webp);
+					video = cargarMp4(lista_mp4[0],'1.45','64%','79%');
+					element.append(video);
 				}
 
+			}
+			else if(page == 31){
+				if(flag_responsivo == false){
+					video = cargarMp4(lista_mp4[0],'1.45','64%','79%');
+					element.append(video);
+				}
+			}
+			else if(page == 33){
+				if(flag_responsivo == false){
+					video = cargarMp4_2(lista_mp4[0],'1.45','64%','71%');
+					element.append(video);
+				}
+			}
+			else if(page == 35){
+				if(flag_responsivo == false){
+					video = cargarMp4_2(lista_mp4[0],'1.45','64%','71%');
+					element.append(video);
+				}
+			}
+			else if(page == 37){
+				if(flag_responsivo == false){
+					video = cargarMp4_2(lista_mp4[0],'1.45','64%','71%');
+					element.append(video);
+				}
+			}
+			else if(page == 39){
+				if(flag_responsivo == false){
+					video = cargarMp4_2(lista_mp4[0],'1.45','64%','71%');
+					element.append(video);
+				}
+			}
+			else if(page == 41){
+				if(flag_responsivo == false){
+					video = cargarMp4_2(lista_mp4[0],'1.45','64%','71%');
+					element.append(video);
+				}
 			}
 		}
 		/////////////////////////////////
@@ -545,12 +644,96 @@ function addPage(page, book) {
 			if(page == 29){
 				if(flag_responsivo == false){
 					// andriid
-					webp = cargarMp4(lista_mp4[0],'1.45','64%','79%');
+					webp = cargarWebp_2(lista_webp[0]);
 					element.append(webp);
 				}
 				// pc
 				else if(flag_responsivo == true){
-					webp = cargarMp4(lista_mp4[0],'1.45','64%','79%');
+					webp = cargarWebp_2(lista_webp[0]);
+					element.append(webp);
+				}
+			}
+			else if(page == 31){
+				if(flag_responsivo == false){
+					// andriid
+					webp = cargarWebp_2(lista_webp[1]);
+					element.append(webp);
+				}
+				// pc
+				else if(flag_responsivo == true){
+					webp = cargarWebp_2(lista_webp[1]);
+					element.append(webp);
+				}
+			}
+			else if(page == 33){
+				if(flag_responsivo == false){
+					// andriid
+					webp = cargarWebp_3(lista_webp[2]);
+					element.append(webp);
+				}
+				// pc
+				else if(flag_responsivo == true){
+					webp = cargarWebp_3(lista_webp[2]);
+					element.append(webp);
+				}
+			}
+			else if(page == 35){
+				if(flag_responsivo == false){
+					// andriid
+					webp = cargarWebp_3(lista_webp[3]);
+					element.append(webp);
+				}
+				// pc
+				else if(flag_responsivo == true){
+					webp = cargarWebp_3(lista_webp[3]);
+					element.append(webp);
+				}
+			}
+			else if(page == 37){
+				if(flag_responsivo == false){
+					// andriid
+					webp = cargarWebp_3(lista_webp[4]);
+					element.append(webp);
+				}
+				// pc
+				else if(flag_responsivo == true){
+					webp = cargarWebp_3(lista_webp[4]);
+					element.append(webp);
+				}
+			}
+			else if(page == 39){
+				if(flag_responsivo == false){
+					// andriid
+					webp = cargarWebp_3(lista_webp[5]);
+					element.append(webp);
+				}
+				// pc
+				else if(flag_responsivo == true){
+					webp = cargarWebp_3(lista_webp[5]);
+					element.append(webp);
+				}
+			}
+			else if(page == 39){
+				if(flag_responsivo == false){
+					// andriid
+					webp = cargarWebp_3(lista_webp[6]);
+					element.append(webp);
+				}
+				// pc
+				else if(flag_responsivo == true){
+					webp = cargarWebp_3(lista_webp[6]);
+					element.append(webp);
+				}
+			}
+			else if(page == 41){
+				if(flag_responsivo == false){
+					// andriid
+					webp = cargarWebp_3(lista_webp[0]);
+					element.append(webp);
+				}
+				// pc
+				else if(flag_responsivo == true){
+					webp = cargarWebp_3(lista_webp[0]);
 					element.append(webp);
 				}
 			}
@@ -959,40 +1142,6 @@ function calculateBound(d) {
 }
 
 
-
-
-// let flecha = document.getElementById('flechaMenu');
-// let menu = document.querySelector('.menu');
-// let menuAbierto = false;
-
-// flecha.addEventListener('click', function(){
-//     if (menuAbierto) {
-//         menu.style.left = '0rem';
-//         flecha.classList.remove('bi-chevron-compact-right');
-//         flecha.classList.add('bi-chevron-compact-left');
-//     } else {
-//         menu.style.left = '-14rem';
-//         flecha.classList.remove('bi-chevron-compact-left');
-//         flecha.classList.add('bi-chevron-compact-right');
-		
-//     }
-    
-//     menuAbierto = !menuAbierto;
-// });
-// flecha.click();
-
-
-// setTimeout(function() {
-//     flecha.click();
-// }, 8000);
-
-
-
-
-
-
-
-
 // RESPONSIVE CLICK FLECHAS
 
 function disableControls(page) {
@@ -1021,3 +1170,5 @@ $(document).ready(function() {
         $('.previous-button').click();
     });
 });
+
+
