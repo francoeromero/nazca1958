@@ -939,22 +939,24 @@ body{
 
 	.next-button-responsive{
 		position: fixed;
-		width: 15rem;
+		width: 35rem;
 		z-index: 9 !important;
 		bottom: 0;
 		right: 0;
-		margin-right: 5rem;
-		margin-bottom: 5rem;
+		/* margin-right: 5rem;
+		margin-bottom: 5rem; */
 		animation: shakeLeft 3s infinite;
+
 	}
 	.previous-button-responsive{
 		position: fixed;
-		width: 15rem;
+		width: 35rem;
 		z-index: 9 !important;
 		bottom: 0;
 		left: 0;
-		margin-left: 5rem;
-		margin-bottom: 5rem;
+
+		/* margin-left: 5rem;
+		margin-bottom: 5rem; */
 		animation: shakeRight 3s infinite;
 
 	}
