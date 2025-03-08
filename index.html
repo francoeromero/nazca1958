@@ -290,39 +290,39 @@ function loadApp() {
 
 			},
 
-			zoomIn: function () {
+			// zoomIn: function () {
 
-				$('.thumbnails').hide();
-				$('.made').hide();
-				$('.magazine').removeClass('animated').addClass('zoom-in');
-				$('.zoom-icon').removeClass('zoom-icon-in').addClass('zoom-icon-out');
+			// 	$('.thumbnails').hide();
+			// 	$('.made').hide();
+			// 	$('.magazine').removeClass('animated').addClass('zoom-in');
+			// 	$('.zoom-icon').removeClass('zoom-icon-in').addClass('zoom-icon-out');
 				
-				if (!window.escTip && !$.isTouch) {
-					escTip = true;
+			// 	if (!window.escTip && !$.isTouch) {
+			// 		escTip = true;
 
-					$('<div />', {'class': 'exit-message'}).
-						html('<div>Press ESC to exit</div>').
-							appendTo($('body')).
-							delay(2000).
-							animate({opacity:0}, 500, function() {
-								$(this).remove();
-							});
-				}
-			},
+			// 		$('<div />', {'class': 'exit-message'}).
+			// 			html('<div>Press ESC to exit</div>').
+			// 				appendTo($('body')).
+			// 				delay(2000).
+			// 				animate({opacity:0}, 500, function() {
+			// 					$(this).remove();
+			// 				});
+			// 	}
+			// },
 
-			zoomOut: function () {
-				flechas.style.display = 'block';
-				$('.exit-message').hide();
-				$('.thumbnails').fadeIn();
-				$('.made').fadeIn();
-				$('.zoom-icon').removeClass('zoom-icon-out').addClass('zoom-icon-in');
+			// zoomOut: function () {
+			// 	flechas.style.display = 'block';
+			// 	$('.exit-message').hide();
+			// 	$('.thumbnails').fadeIn();
+			// 	$('.made').fadeIn();
+			// 	$('.zoom-icon').removeClass('zoom-icon-out').addClass('zoom-icon-in');
 
-				setTimeout(function(){
-					$('.magazine').addClass('animated').removeClass('zoom-in');
-					resizeViewport();
-				}, 0);
+			// 	setTimeout(function(){
+			// 		$('.magazine').addClass('animated').removeClass('zoom-in');
+			// 		resizeViewport();
+			// 	}, 0);
 
-			}
+			// }
 		}
 	});
 

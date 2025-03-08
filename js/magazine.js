@@ -788,21 +788,21 @@ function loadPage(page, pageElement) {
 
 // Zoom in / Zoom out
 
-function zoomTo(event) {
+// function zoomTo(event) {
 
-		setTimeout(function() {
-			if ($('.magazine-viewport').data().regionClicked) {
-				$('.magazine-viewport').data().regionClicked = false;
-			} else {
-				if ($('.magazine-viewport').zoom('value')==1) {
-					$('.magazine-viewport').zoom('zoomIn', event);
-				} else {
-					$('.magazine-viewport').zoom('zoomOut');
-				}
-			}
-		}, 1);
+// 		setTimeout(function() {
+// 			if ($('.magazine-viewport').data().regionClicked) {
+// 				$('.magazine-viewport').data().regionClicked = false;
+// 			} else {
+// 				if ($('.magazine-viewport').zoom('value')==1) {
+// 					$('.magazine-viewport').zoom('zoomIn', event);
+// 				} else {
+// 					$('.magazine-viewport').zoom('zoomOut');
+// 				}
+// 			}
+// 		}, 1);
 
-}
+// }
 
 
 
@@ -874,18 +874,18 @@ function processRegion(region, regionType) {
 			window.open(data.url);
 
 		break;
-		case 'zoom' :
+		// case 'zoom' :
 
-			var regionOffset = region.offset(),
-				viewportOffset = $('.magazine-viewport').offset(),
-				pos = {
-					x: regionOffset.left-viewportOffset.left,
-					y: regionOffset.top-viewportOffset.top
-				};
+		// 	var regionOffset = region.offset(),
+		// 		viewportOffset = $('.magazine-viewport').offset(),
+		// 		pos = {
+		// 			x: regionOffset.left-viewportOffset.left,
+		// 			y: regionOffset.top-viewportOffset.top
+		// 		};
 
-			$('.magazine-viewport').zoom('zoomIn', pos);
+		// 	$('.magazine-viewport').zoom('zoomIn', pos);
 
-		break;
+		// break;
 		case 'to-page' :
 
 			$('.magazine').turn('page', data.page);
@@ -976,6 +976,7 @@ function resizeViewport() {
 		width: width,
 		height: height
 	}).
+
 	zoom('resize');
 
 
