@@ -557,7 +557,12 @@ function addPage(page, book) {
 		// LISTAS
 		lista_mp4 = [
 			'./video/0.mp4',
-			'./video/0.mp4'
+			'./video/1.mp4',
+			'./video/2.mp4',
+			'./video/3.mp4',
+			'./video/4.mp4',
+			'./video/5.mp4',
+			'./video/6.mp4',
 		];
 		lista_webp = [
 			'./webp/pc/0.webp',
