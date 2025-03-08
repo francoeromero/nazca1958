@@ -483,7 +483,7 @@ function cargarMp4(ruta,escala,posicionX,posicionY){
 
 	let cargarVideo = $('<video></video>')
 	.attr('src', ruta)
-	.attr('controls', true)
+
 	.attr('autoplay', true)
 	.attr('muted', true) 
 	.css({
@@ -517,7 +517,6 @@ function cargarMp4_2(ruta,escala,posicionX,posicionY){
 
 	let cargarVideo = $('<video></video>')
 	.attr('src', ruta)
-	.attr('controls', true)
 	.attr('autoplay', true)
 	.attr('muted', true) 
 	.css({
