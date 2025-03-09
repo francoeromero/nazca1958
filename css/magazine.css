@@ -1210,9 +1210,10 @@ body{
 .logo-name {
     display: block; /* Asegura que se comporte correctamente */
     width: auto; /* Permite que se ajuste de manera natural */
-    max-width: 8vw; /* No crece más allá del 20% del viewport */
+    max-width: 28vw; /* No crece más allá del 20% del viewport */
     height: auto; /* Mantiene la proporción */
-    max-height: 30px; /* Límite máximo de altura */
+    max-height: 10vh; /* Límite máximo de altura */
+	
     object-fit: contain; /* Evita que la imagen se deforme */
 }
 
