@@ -766,8 +766,9 @@ function loadPage(page, pageElement) {
 	// Load the page
 
 	img.attr('src', 'pages/' +  page + '.jpg');
-
+	
 	loadRegions(page, pageElement);
+	
 
 
 	// ////////////////////////////////////////------------------------------/////////////////////////////////////////
@@ -808,20 +809,20 @@ function loadPage(page, pageElement) {
 // Load regions
 
 function loadRegions(page, element) {
-
 	$.getJSON('pages/'+page+'-regions.json').
-		done(function(data) {
-
-			$.each(data, function(key, region) {
-				addRegion(region, element);
-			});
+	done(function(data) {
+		
+		$.each(data, function(key, region) {
+			addRegion(region, element);
 		});
+	});
 }
 
 // Add region
 
 function addRegion(region, pageElement) {
 	
+	console.log('funciona')
 	var reg = $('<div />', {'class': 'region  ' + region['class']}),
 		options = $('.magazine').turn('options'),
 		pageWidth = options.width/2,
