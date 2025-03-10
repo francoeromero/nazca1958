@@ -573,22 +573,22 @@ function addPage(page, book) {
 			'./webp/pc/6.webp'
 		];
 		lista_webp_iphone = [
-			'./webp/pc/0.webp',
-			'./webp/pc/1.webp',
-			'./webp/pc/2.webp',
-			'./webp/pc/3.webp',
-			'./webp/pc/4.webp',
-			'./webp/pc/5.webp',
-			'./webp/pc/6.webp'
+			'#',
+			'#',
+			'#',
+			'#',
+			'#',
+			'#',
+			'#'
 		];
 		lista_webp_android = [
-			'./webp/pc/0.webp',
-			'./webp/pc/1.webp',
-			'./webp/pc/2.webp',
-			'./webp/pc/3.webp',
-			'./webp/pc/4.webp',
-			'./webp/pc/5.webp',
-			'./webp/pc/6.webp'
+			'#',
+			'#',
+			'#',
+			'#',
+			'#',
+			'#',
+			'#'
 		];
 		// Add the initial HTML
 		// It will contain a loader indicator and a gradient
@@ -601,7 +601,7 @@ function addPage(page, book) {
 				if(flag_responsivo == false){
 					// video = cargarMp4(lista_mp4[0],'1.45','64%','79%');
 					// element.append(video);
-					webp = cargarWebp_2(lista_webp[0]);
+					webp = cargarWebp_2(lista_webp_iphone[0]);
 					element.append(webp);
 				}
 
@@ -610,7 +610,7 @@ function addPage(page, book) {
 				if(flag_responsivo == false){
 					// video = cargarMp4(lista_mp4[1],'1.45','64%','79%');
 					// element.append(video);
-					webp = cargarWebp_2(lista_webp[1]);
+					webp = cargarWebp_2(lista_webp_iphone[1]);
 					element.append(webp);
 				}
 			}
@@ -618,7 +618,7 @@ function addPage(page, book) {
 				if(flag_responsivo == false){
 					// video = cargarMp4_2(lista_mp4[2],'1.45','64%','71%');
 					// element.append(video);
-					webp = cargarWebp_3(lista_webp[2]);
+					webp = cargarWebp_3(lista_webp_iphone[2]);
 					element.append(webp);
 				}
 			}
@@ -626,7 +626,7 @@ function addPage(page, book) {
 				if(flag_responsivo == false){
 					// video = cargarMp4_2(lista_mp4[3],'1.45','64%','71%');
 					// element.append(video);
-					webp = cargarWebp_3(lista_webp[3]);
+					webp = cargarWebp_3(lista_webp_iphone[3]);
 					element.append(webp);
 				}
 			}
@@ -634,7 +634,7 @@ function addPage(page, book) {
 				if(flag_responsivo == false){
 					// video = cargarMp4_2(lista_mp4[4],'1.45','64%','71%');
 					// element.append(video);
-					webp = cargarWebp_3(lista_webp[4]);
+					webp = cargarWebp_3(lista_webp_iphone[4]);
 					element.append(webp);
 				}
 			}
@@ -642,7 +642,7 @@ function addPage(page, book) {
 				if(flag_responsivo == false){
 					// video = cargarMp4_2(lista_mp4[5],'1.45','64%','71%');
 					// element.append(video);
-					webp = cargarWebp_3(lista_webp[5]);
+					webp = cargarWebp_3(lista_webp_iphone[5]);
 					element.append(webp);
 				}
 			}
@@ -650,7 +650,7 @@ function addPage(page, book) {
 				if(flag_responsivo == false){
 					// video = cargarMp4_2(lista_mp4[6],'1.45','64%','71%');
 					// element.append(video);
-					webp = cargarWebp_3(lista_webp[6]);
+					webp = cargarWebp_3(lista_webp_iphone[6]);
 					element.append(webp);
 				}
 			}
@@ -663,7 +663,7 @@ function addPage(page, book) {
 			if(page == 29){
 				if(flag_responsivo == false){
 					// andriid
-					webp = cargarWebp_2(lista_webp[0]);
+					webp = cargarWebp_2(lista_webp_android[0]);
 					element.append(webp);
 				}
 				// pc
@@ -675,7 +675,7 @@ function addPage(page, book) {
 			else if(page == 31){
 				if(flag_responsivo == false){
 					// andriid
-					webp = cargarWebp_2(lista_webp[1]);
+					webp = cargarWebp_2(lista_webp_android[1]);
 					element.append(webp);
 				}
 				// pc
@@ -687,7 +687,7 @@ function addPage(page, book) {
 			else if(page == 33){
 				if(flag_responsivo == false){
 					// andriid
-					webp = cargarWebp_3(lista_webp[2]);
+					webp = cargarWebp_3(lista_webp_android[2]);
 					element.append(webp);
 				}
 				// pc
@@ -699,7 +699,7 @@ function addPage(page, book) {
 			else if(page == 35){
 				if(flag_responsivo == false){
 					// andriid
-					webp = cargarWebp_3(lista_webp[3]);
+					webp = cargarWebp_3(lista_webp_android[3]);
 					element.append(webp);
 				}
 				// pc
@@ -711,7 +711,7 @@ function addPage(page, book) {
 			else if(page == 37){
 				if(flag_responsivo == false){
 					// andriid
-					webp = cargarWebp_3(lista_webp[4]);
+					webp = cargarWebp_3(lista_webp_android[4]);
 					element.append(webp);
 				}
 				// pc
@@ -724,7 +724,7 @@ function addPage(page, book) {
 			else if(page == 39){
 				if(flag_responsivo == false){
 					// andriid
-					webp = cargarWebp_3(lista_webp[5]);
+					webp = cargarWebp_3(lista_webp_android[5]);
 					element.append(webp);
 				}
 				// pc
@@ -736,7 +736,7 @@ function addPage(page, book) {
 			else if(page == 41){
 				if(flag_responsivo == false){
 					// andriid
-					webp = cargarWebp_3(lista_webp[6]);
+					webp = cargarWebp_3(lista_webp_android[6]);
 					element.append(webp);
 				}
 				// pc
