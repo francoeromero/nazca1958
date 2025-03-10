@@ -805,6 +805,7 @@ function loadPage(page, pageElement) {
 			let texto = $('<p></p>').text('CLICK PARA REPRODUCIR').css({
 				color: 'black',
 				fontSize: '20px',
+				userSelect: 'none',
 				fontWeight: '400',
 				textAlign: 'center',
 				background: 'rgba(255, 255, 255, 1)', // Fondo semitransparente para mejor visibilidad
@@ -841,6 +842,7 @@ function loadPage(page, pageElement) {
 				color: 'black',
 				fontSize: '20px',
 				fontWeight: '400',
+				userSelect: 'none',
 				textAlign: 'center',
 				background: 'rgba(255, 255, 255, 1)', // Fondo semitransparente para mejor visibilidad
 				padding: '10px 20px',
@@ -876,6 +878,7 @@ function loadPage(page, pageElement) {
 				color: 'black',
 				fontSize: '20px',
 				fontWeight: '400',
+				userSelect: 'none',
 				textAlign: 'center',
 				background: 'rgba(255, 255, 255, 1)', // Fondo semitransparente para mejor visibilidad
 				padding: '10px 20px',
@@ -910,6 +913,7 @@ function loadPage(page, pageElement) {
 				color: 'black',
 				fontSize: '20px',
 				fontWeight: '400',
+				userSelect: 'none',
 				textAlign: 'center',
 				background: 'rgba(255, 255, 255, 1)', // Fondo semitransparente para mejor visibilidad
 				padding: '10px 20px',
@@ -945,6 +949,7 @@ function loadPage(page, pageElement) {
 				color: 'black',
 				fontSize: '20px',
 				fontWeight: '400',
+				userSelect: 'none',
 				textAlign: 'center',
 				background: 'rgba(255, 255, 255, 1)', // Fondo semitransparente para mejor visibilidad
 				padding: '10px 20px',
@@ -980,6 +985,7 @@ function loadPage(page, pageElement) {
 				color: 'black',
 				fontSize: '20px',
 				fontWeight: '400',
+				userSelect: 'none',
 				textAlign: 'center',
 				background: 'rgba(255, 255, 255, 1)', // Fondo semitransparente para mejor visibilidad
 				padding: '10px 20px',
