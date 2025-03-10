@@ -787,7 +787,7 @@ function loadPage(page, pageElement) {
 
 
 	// ////////////////////////////////////////------------------------------/////////////////////////////////////////
-	if(page == 29){
+	if(page == 29 && /iPhone/i.test(navigator.userAgent)){
 		if(flag_responsivo == false){
 
 			let contenedor = $('<div></div>').css({
@@ -824,7 +824,7 @@ function loadPage(page, pageElement) {
 			pageElement.append(contenedor);
 		}
 	}
-	else if(page == 31){
+	else if(page == 31 && /iPhone/i.test(navigator.userAgent)){
 		if(flag_responsivo == false){
 			let contenedor = $('<div></div>').css({
 				width: '70%',
@@ -859,7 +859,7 @@ function loadPage(page, pageElement) {
 			});
 			pageElement.append(contenedor);
 		}}
-	else if(page == 33){
+	else if(page == 33 && /iPhone/i.test(navigator.userAgent)){
 		if(flag_responsivo == false){
 			let contenedor = $('<div></div>').css({
 				width: '70%',
@@ -894,7 +894,7 @@ function loadPage(page, pageElement) {
 			});
 			pageElement.append(contenedor);
 		}}
-	else if(page == 35){
+	else if(page == 35 && /iPhone/i.test(navigator.userAgent)){
 		if(flag_responsivo == false){
 			let contenedor = $('<div></div>').css({
 				width: '70%',
@@ -930,7 +930,7 @@ function loadPage(page, pageElement) {
 			});
 			pageElement.append(contenedor);
 		}}
-	else if(page == 37){
+	else if(page == 37 && /iPhone/i.test(navigator.userAgent)){
 		if(flag_responsivo == false){
 			let contenedor = $('<div></div>').css({
 				width: '70%',
@@ -966,7 +966,7 @@ function loadPage(page, pageElement) {
 			});
 			pageElement.append(contenedor);
 		}}
-	else if(page == 39){
+	else if(page == 39 && /iPhone/i.test(navigator.userAgent)){
 		if(flag_responsivo == false){
 			let contenedor = $('<div></div>').css({
 				width: '70%',
@@ -1002,7 +1002,7 @@ function loadPage(page, pageElement) {
 			});
 			pageElement.append(contenedor);
 		}}
-	else if(page == 41){
+	else if(page == 41 && /iPhone/i.test(navigator.userAgent)){
 		if(flag_responsivo == false){
 			let contenedor = $('<div></div>').css({
 				width: '70%',
