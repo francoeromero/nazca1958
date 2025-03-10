@@ -572,6 +572,7 @@ function addPage(page, book) {
 			'./webp/pc/5.webp',
 			'./webp/pc/6.webp'
 		];
+		// '#'desactivado imagenes estaticas para cel 
 		lista_webp_iphone = [
 			'#',
 			'#',
@@ -582,13 +583,13 @@ function addPage(page, book) {
 			'#'
 		];
 		lista_webp_android = [
-			'#',
-			'#',
-			'#',
-			'#',
-			'#',
-			'#',
-			'#'
+			'./webp/pc/0.webp',
+			'./webp/pc/1.webp',
+			'./webp/pc/2.webp',
+			'./webp/pc/3.webp',
+			'./webp/pc/4.webp',
+			'./webp/pc/5.webp',
+			'./webp/pc/6.webp'
 		];
 		// Add the initial HTML
 		// It will contain a loader indicator and a gradient
