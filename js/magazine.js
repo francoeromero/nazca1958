@@ -796,8 +796,26 @@ function loadPage(page, pageElement) {
 				right:60,
 				position:'absolute',
 				background: 'rgba(0,0,0,0)',
-				zIndex: '99999999'
+				zIndex: '99999999',
+				display: 'flex',
+				justifyContent: 'center', // Centra horizontalmente el contenido
+				alignItems: 'center', // Centra verticalmente el contenido
+				cursor: 'pointer',
 			}).addClass('testeando')
+			let texto = $('<p></p>').text('CLICK PARA REPRODUCIR').css({
+				color: 'black',
+				fontSize: '20px',
+				fontWeight: '400',
+				textAlign: 'center',
+				background: 'rgba(255, 255, 255, 1)', // Fondo semitransparente para mejor visibilidad
+				padding: '10px 20px',
+				borderRadius: '5px',
+				'font-family': "'Quicksand', sans-serif",
+				zIndex: 999999,
+			});
+			contenedor.append(texto);
+
+
 			contenedor.click(function() {
 				createVideoElement('./video/0.mp4');
 			});
@@ -806,15 +824,33 @@ function loadPage(page, pageElement) {
 	}
 	else if(page == 31){
 		if(flag_responsivo == false){
-						let contenedor = $('<div></div>').css({
+			let contenedor = $('<div></div>').css({
 				width: '70%',
 				height: '50%',
 				bottom:40,
 				right:60,
 				position:'absolute',
 				background: 'rgba(0,0,0,0)',
-				zIndex: '99999999'
+				zIndex: '99999999',
+				display: 'flex',
+				justifyContent: 'center', // Centra horizontalmente el contenido
+				alignItems: 'center', // Centra verticalmente el contenido
+				cursor: 'pointer',
 			}).addClass('testeando')
+			let texto = $('<p></p>').text('CLICK PARA REPRODUCIR').css({
+				color: 'black',
+				fontSize: '20px',
+				fontWeight: '400',
+				textAlign: 'center',
+				background: 'rgba(255, 255, 255, 1)', // Fondo semitransparente para mejor visibilidad
+				padding: '10px 20px',
+				borderRadius: '5px',
+				'font-family': "'Quicksand', sans-serif",
+				zIndex: 999999,
+			});
+			contenedor.append(texto);
+
+
 			contenedor.click(function() {
 				createVideoElement('./video/1.mp4');
 			});
@@ -822,15 +858,33 @@ function loadPage(page, pageElement) {
 		}}
 	else if(page == 33){
 		if(flag_responsivo == false){
-						let contenedor = $('<div></div>').css({
+			let contenedor = $('<div></div>').css({
 				width: '70%',
 				height: '50%',
 				bottom:40,
 				right:60,
 				position:'absolute',
 				background: 'rgba(0,0,0,0)',
-				zIndex: '99999999'
+				zIndex: '99999999',
+				display: 'flex',
+				justifyContent: 'center', // Centra horizontalmente el contenido
+				alignItems: 'center', // Centra verticalmente el contenido
+				cursor: 'pointer',
+				transform: 'translateY(-15%)'
 			}).addClass('testeando')
+			let texto = $('<p></p>').text('CLICK PARA REPRODUCIR').css({
+				color: 'black',
+				fontSize: '20px',
+				fontWeight: '400',
+				textAlign: 'center',
+				background: 'rgba(255, 255, 255, 1)', // Fondo semitransparente para mejor visibilidad
+				padding: '10px 20px',
+				borderRadius: '5px',
+				'font-family': "'Quicksand', sans-serif",
+				zIndex: 999999,
+			});
+			contenedor.append(texto);
+
 			contenedor.click(function() {
 				createVideoElement('./video/2.mp4');
 			});
@@ -838,15 +892,34 @@ function loadPage(page, pageElement) {
 		}}
 	else if(page == 35){
 		if(flag_responsivo == false){
-						let contenedor = $('<div></div>').css({
+			let contenedor = $('<div></div>').css({
 				width: '70%',
 				height: '50%',
 				bottom:40,
 				right:60,
 				position:'absolute',
 				background: 'rgba(0,0,0,0)',
-				zIndex: '99999999'
+				zIndex: '99999999',
+				display: 'flex',
+				justifyContent: 'center', // Centra horizontalmente el contenido
+				alignItems: 'center', // Centra verticalmente el contenido
+				cursor: 'pointer',
+				transform: 'translateY(-15%)'
 			}).addClass('testeando')
+			let texto = $('<p></p>').text('CLICK PARA REPRODUCIR').css({
+				color: 'black',
+				fontSize: '20px',
+				fontWeight: '400',
+				textAlign: 'center',
+				background: 'rgba(255, 255, 255, 1)', // Fondo semitransparente para mejor visibilidad
+				padding: '10px 20px',
+				borderRadius: '5px',
+				'font-family': "'Quicksand', sans-serif",
+				zIndex: 999999,
+			});
+			contenedor.append(texto);
+
+
 			contenedor.click(function() {
 				createVideoElement('./video/3.mp4');
 			});
@@ -854,15 +927,34 @@ function loadPage(page, pageElement) {
 		}}
 	else if(page == 37){
 		if(flag_responsivo == false){
-						let contenedor = $('<div></div>').css({
+			let contenedor = $('<div></div>').css({
 				width: '70%',
 				height: '50%',
 				bottom:40,
 				right:60,
 				position:'absolute',
 				background: 'rgba(0,0,0,0)',
-				zIndex: '99999999'
+				zIndex: '99999999',
+				display: 'flex',
+				justifyContent: 'center', // Centra horizontalmente el contenido
+				alignItems: 'center', // Centra verticalmente el contenido
+				cursor: 'pointer',
+				transform: 'translateY(-15%)'
 			}).addClass('testeando')
+			let texto = $('<p></p>').text('CLICK PARA REPRODUCIR').css({
+				color: 'black',
+				fontSize: '20px',
+				fontWeight: '400',
+				textAlign: 'center',
+				background: 'rgba(255, 255, 255, 1)', // Fondo semitransparente para mejor visibilidad
+				padding: '10px 20px',
+				borderRadius: '5px',
+				'font-family': "'Quicksand', sans-serif",
+				zIndex: 999999,
+			});
+			contenedor.append(texto);
+
+
 			contenedor.click(function() {
 				createVideoElement('./video/4.mp4');
 			});
@@ -870,15 +962,34 @@ function loadPage(page, pageElement) {
 		}}
 	else if(page == 39){
 		if(flag_responsivo == false){
-						let contenedor = $('<div></div>').css({
+			let contenedor = $('<div></div>').css({
 				width: '70%',
 				height: '50%',
 				bottom:40,
 				right:60,
 				position:'absolute',
 				background: 'rgba(0,0,0,0)',
-				zIndex: '99999999'
+				zIndex: '99999999',
+				display: 'flex',
+				justifyContent: 'center', // Centra horizontalmente el contenido
+				alignItems: 'center', // Centra verticalmente el contenido
+				cursor: 'pointer',
+				transform: 'translateY(-15%)'
 			}).addClass('testeando')
+			let texto = $('<p></p>').text('CLICK PARA REPRODUCIR').css({
+				color: 'black',
+				fontSize: '20px',
+				fontWeight: '400',
+				textAlign: 'center',
+				background: 'rgba(255, 255, 255, 1)', // Fondo semitransparente para mejor visibilidad
+				padding: '10px 20px',
+				borderRadius: '5px',
+				'font-family': "'Quicksand', sans-serif",
+				zIndex: 999999,
+			});
+			contenedor.append(texto);
+
+
 			contenedor.click(function() {
 				createVideoElement('./video/5.mp4');
 			});
@@ -886,15 +997,34 @@ function loadPage(page, pageElement) {
 		}}
 	else if(page == 41){
 		if(flag_responsivo == false){
-						let contenedor = $('<div></div>').css({
+			let contenedor = $('<div></div>').css({
 				width: '70%',
 				height: '50%',
 				bottom:40,
 				right:60,
 				position:'absolute',
 				background: 'rgba(0,0,0,0)',
-				zIndex: '99999999'
+				zIndex: '99999999',
+				display: 'flex',
+				justifyContent: 'center', // Centra horizontalmente el contenido
+				alignItems: 'center', // Centra verticalmente el contenido
+				cursor: 'pointer',
+				transform: 'translateY(-15%)'
 			}).addClass('testeando')
+			let texto = $('<p></p>').text('CLICK PARA REPRODUCIR').css({
+				color: 'black',
+				fontSize: '20px',
+				fontWeight: '400',
+				textAlign: 'center',
+				background: 'rgba(255, 255, 255, 1)', // Fondo semitransparente para mejor visibilidad
+				padding: '10px 20px',
+				borderRadius: '5px',
+				'font-family': "'Quicksand', sans-serif",
+				zIndex: 999999,
+			});
+			contenedor.append(texto);
+
+
 			contenedor.click(function() {
 				createVideoElement('./video/6.mp4');
 			});
@@ -1007,7 +1137,6 @@ function createVideoElement(videoUrl) {
     var videoElement = $('<video />', {
         id: 'miVideo',
         src: videoUrl,
-        autoplay: true,
         muted: true,
     });
     // Crear botón de cierre
