@@ -95,7 +95,7 @@
 </div>
 
 
-<div class="loading-page" style="display: none;">
+<div class="loading-page" >
 	<svg class="logoEmpresa"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 645 1080">
 		<defs>
 
@@ -119,45 +119,7 @@
 </div> 
 
 
-<!-- <script>
-    const video = document.getElementById("miVideo");
-    const range = document.getElementById("barra-deslizable");
-    const cerrarVideo = document.getElementById("cerrar-video");
-    const videoContainer = document.getElementById("video-container");
 
-    // Alternar play/pause al hacer clic en el video
-    video.addEventListener("click", () => {
-        if (video.paused) {
-            video.play();
-        } else {
-            video.pause();
-        }
-    });
-
-    // Cerrar el contenedor del video al hacer clic en la "X"
-    cerrarVideo.addEventListener("click", () => {
-        videoContainer.remove(); // Elimina completamente el div de la página
-    });
-
-    // Actualiza la barra de progreso mientras el video se reproduce
-    video.addEventListener("timeupdate", () => {
-        const progreso = (video.currentTime / video.duration) * 100;
-        range.value = progreso; // Actualiza la barra
-    });
-
-    // Permite que el usuario controle el video con el slider
-    range.addEventListener("input", () => {
-        const nuevoTiempo = (range.value / 100) * video.duration;
-        video.currentTime = nuevoTiempo;
-    });
-
-    // Si el video no está reproduciéndose, al mover el slider se actualiza el video manualmente
-    range.addEventListener("change", () => {
-        if (video.paused) {
-            video.play();
-        }
-    });
-</script> -->
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"

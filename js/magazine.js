@@ -1139,6 +1139,24 @@ function createVideoElement(videoUrl) {
         src: videoUrl,
         muted: true,
     });
+	// Crear el triángulo de Play
+	var playButton = $('<div />', {
+		id: 'play-button',
+		css: {
+			position: 'absolute',
+			top: '50%',
+			left: '50%',
+			transform: 'translate(-50%, -50%)',
+
+			width: '0',
+			height: '0',
+			borderLeft: '130px solid white',
+			borderTop: '80px solid transparent',
+			borderBottom: '80px solid transparent',
+			cursor: 'pointer',
+			zIndex: '999999999999999999999999999'
+		}
+	});
     // Crear botón de cierre
     var closeButton = $('<div />', {
         id: 'cerrar-video',
@@ -1156,20 +1174,36 @@ function createVideoElement(videoUrl) {
         value: '0',
     });
     // Agregar elementos al contenedor
-    videoContainer.append(elementosVideo.append(videoElement).append(closeButton).append(progressBar));
+	elementosVideo.append(videoElement, playButton, closeButton, progressBar);
+    videoContainer.append(elementosVideo);
 
     // Agregar el contenedor directamente al body
     $('body').append(videoContainer);
 
-	agregarFuncionesVideo(videoElement, closeButton, progressBar);
+	agregarFuncionesVideo(videoElement, closeButton, progressBar,playButton);
 	
 }
 
-function agregarFuncionesVideo(videoElement, closeButton, progressBar) {
+function agregarFuncionesVideo(videoElement, closeButton, progressBar,playButton) {
+	playButton.on("click", function() {
+        if (videoElement[0].paused) {
+            videoElement[0].play();
+			$("#play-button").css("animation", "play 0.5s ease-in-out forwards");
+			setTimeout(() => {
+				$("#play-button").remove();
+			}, 500);
+        } else {
+            videoElement[0].pause();
+        }
+    });
     // Alternar play/pause al hacer clic en el video
     videoElement.on("click", function() {
         if (videoElement[0].paused) {
             videoElement[0].play();
+			$("#play-button").css("animation", "play 0.5s ease-in-out forwards");
+			setTimeout(() => {
+				$("#play-button").remove();
+			}, 500);
         } else {
             videoElement[0].pause();
         }
