@@ -599,45 +599,59 @@ function addPage(page, book) {
 		if (/iPhone/i.test(navigator.userAgent)){
 			if(page == 29){
 				if(flag_responsivo == false){
-					video = cargarMp4(lista_mp4[0],'1.45','64%','79%');
-					element.append(video);
+					// video = cargarMp4(lista_mp4[0],'1.45','64%','79%');
+					// element.append(video);
+					webp = cargarWebp_2(lista_webp[0]);
+					element.append(webp);
 				}
 
 			}
 			else if(page == 31){
 				if(flag_responsivo == false){
-					video = cargarMp4(lista_mp4[1],'1.45','64%','79%');
-					element.append(video);
+					// video = cargarMp4(lista_mp4[1],'1.45','64%','79%');
+					// element.append(video);
+					webp = cargarWebp_2(lista_webp[1]);
+					element.append(webp);
 				}
 			}
 			else if(page == 33){
 				if(flag_responsivo == false){
-					video = cargarMp4_2(lista_mp4[2],'1.45','64%','71%');
-					element.append(video);
+					// video = cargarMp4_2(lista_mp4[2],'1.45','64%','71%');
+					// element.append(video);
+					webp = cargarWebp_3(lista_webp[2]);
+					element.append(webp);
 				}
 			}
 			else if(page == 35){
 				if(flag_responsivo == false){
-					video = cargarMp4_2(lista_mp4[3],'1.45','64%','71%');
-					element.append(video);
+					// video = cargarMp4_2(lista_mp4[3],'1.45','64%','71%');
+					// element.append(video);
+					webp = cargarWebp_3(lista_webp[3]);
+					element.append(webp);
 				}
 			}
 			else if(page == 37){
 				if(flag_responsivo == false){
-					video = cargarMp4_2(lista_mp4[4],'1.45','64%','71%');
-					element.append(video);
+					// video = cargarMp4_2(lista_mp4[4],'1.45','64%','71%');
+					// element.append(video);
+					webp = cargarWebp_3(lista_webp[4]);
+					element.append(webp);
 				}
 			}
 			else if(page == 39){
 				if(flag_responsivo == false){
-					video = cargarMp4_2(lista_mp4[5],'1.45','64%','71%');
-					element.append(video);
+					// video = cargarMp4_2(lista_mp4[5],'1.45','64%','71%');
+					// element.append(video);
+					webp = cargarWebp_3(lista_webp[5]);
+					element.append(webp);
 				}
 			}
 			else if(page == 41){
 				if(flag_responsivo == false){
-					video = cargarMp4_2(lista_mp4[6],'1.45','64%','71%');
-					element.append(video);
+					// video = cargarMp4_2(lista_mp4[6],'1.45','64%','71%');
+					// element.append(video);
+					webp = cargarWebp_3(lista_webp[6]);
+					element.append(webp);
 				}
 			}
 		}
@@ -772,19 +786,124 @@ function loadPage(page, pageElement) {
 
 
 	// ////////////////////////////////////////------------------------------/////////////////////////////////////////
-	// let contenedor = $('<div></div>').css({
-	// 	width: '30%',
-	// 	height: '30%',
-	// 	position:'absolute',
-	// 	background: 'rgba(115, 190, 15, 0.5)',
-	// 	zIndex: '99999999'
-	// }).addClass('testeando')
-	// contenedor.click(function() {
-    //     alert('test');
-    // });
-	// pageElement.append(contenedor);
+	if(page == 29){
+		if(flag_responsivo == false){
+
+			let contenedor = $('<div></div>').css({
+				width: '70%',
+				height: '50%',
+				bottom:40,
+				right:60,
+				position:'absolute',
+				background: 'rgba(0,0,0,0)',
+				zIndex: '99999999'
+			}).addClass('testeando')
+			contenedor.click(function() {
+				createVideoElement('./video/0.mp4');
+			});
+			pageElement.append(contenedor);
+		}
+	}
+	else if(page == 31){
+		if(flag_responsivo == false){
+						let contenedor = $('<div></div>').css({
+				width: '70%',
+				height: '50%',
+				bottom:40,
+				right:60,
+				position:'absolute',
+				background: 'rgba(0,0,0,0)',
+				zIndex: '99999999'
+			}).addClass('testeando')
+			contenedor.click(function() {
+				createVideoElement('./video/1.mp4');
+			});
+			pageElement.append(contenedor);
+		}}
+	else if(page == 33){
+		if(flag_responsivo == false){
+						let contenedor = $('<div></div>').css({
+				width: '70%',
+				height: '50%',
+				bottom:40,
+				right:60,
+				position:'absolute',
+				background: 'rgba(0,0,0,0)',
+				zIndex: '99999999'
+			}).addClass('testeando')
+			contenedor.click(function() {
+				createVideoElement('./video/2.mp4');
+			});
+			pageElement.append(contenedor);
+		}}
+	else if(page == 35){
+		if(flag_responsivo == false){
+						let contenedor = $('<div></div>').css({
+				width: '70%',
+				height: '50%',
+				bottom:40,
+				right:60,
+				position:'absolute',
+				background: 'rgba(0,0,0,0)',
+				zIndex: '99999999'
+			}).addClass('testeando')
+			contenedor.click(function() {
+				createVideoElement('./video/3.mp4');
+			});
+			pageElement.append(contenedor);
+		}}
+	else if(page == 37){
+		if(flag_responsivo == false){
+						let contenedor = $('<div></div>').css({
+				width: '70%',
+				height: '50%',
+				bottom:40,
+				right:60,
+				position:'absolute',
+				background: 'rgba(0,0,0,0)',
+				zIndex: '99999999'
+			}).addClass('testeando')
+			contenedor.click(function() {
+				createVideoElement('./video/4.mp4');
+			});
+			pageElement.append(contenedor);
+		}}
+	else if(page == 39){
+		if(flag_responsivo == false){
+						let contenedor = $('<div></div>').css({
+				width: '70%',
+				height: '50%',
+				bottom:40,
+				right:60,
+				position:'absolute',
+				background: 'rgba(0,0,0,0)',
+				zIndex: '99999999'
+			}).addClass('testeando')
+			contenedor.click(function() {
+				createVideoElement('./video/5.mp4');
+			});
+			pageElement.append(contenedor);
+		}}
+	else if(page == 41){
+		if(flag_responsivo == false){
+						let contenedor = $('<div></div>').css({
+				width: '70%',
+				height: '50%',
+				bottom:40,
+				right:60,
+				position:'absolute',
+				background: 'rgba(0,0,0,0)',
+				zIndex: '99999999'
+			}).addClass('testeando')
+			contenedor.click(function() {
+				createVideoElement('./video/6.mp4');
+			});
+			pageElement.append(contenedor);
+		}}
 
 }
+
+
 
 // Zoom in / Zoom out
 
@@ -822,7 +941,7 @@ function loadRegions(page, element) {
 
 function addRegion(region, pageElement) {
 	
-	console.log('funciona')
+	
 	var reg = $('<div />', {'class': 'region  ' + region['class']}),
 		options = $('.magazine').turn('options'),
 		pageWidth = options.width/2,
@@ -842,26 +961,115 @@ function addRegion(region, pageElement) {
 
 // Process click on a region
 
+
 function regionClick(event) {
 
 	var region = $(event.target);
-
+	// verifico si tiene la clase region
 	if (region.hasClass('region')) {
-
+		// 
 		$('.magazine-viewport').data().regionClicked = true;
 		
+
 		setTimeout(function() {
 			$('.magazine-viewport').data().regionClicked = false;
 		}, 100);
 		
 		var regionType = $.trim(region.attr('class').replace('region', ''));
-
+		
+		// ////////////////////////////////////////////
+		// var regionData = region.attr('region-data');
+		// var regionInfo = regionData ? Object.fromEntries(new URLSearchParams(regionData)) : {};
+		// console.log("Datos de la región:", regionInfo);
+		// // Si existe un video en la región, creamos el elemento dinámicamente
+		// if (regionInfo.video) {
+		// 	console.log('funciona')
+		// 	createVideoElement(regionInfo.video);
+		// }
+		// ///////////////////////////////////////////
 		return processRegion(region, regionType);
-
 	}
 
 }
 
+function createVideoElement(videoUrl) {
+    // Si ya existe un video en el body, lo eliminamos
+    $('#video-container').remove();
+    // Crear contenedor principal del video
+    var videoContainer = $('<div />', {
+        id: 'video-container',
+    });
+    // Crear div interno para organizar los elementos del video
+    var elementosVideo = $('<div />', {
+        id: 'elementosVideo'
+    });
+    // Crear el elemento de video
+    var videoElement = $('<video />', {
+        id: 'miVideo',
+        src: videoUrl,
+        autoplay: true,
+        muted: true,
+    });
+    // Crear botón de cierre
+    var closeButton = $('<div />', {
+        id: 'cerrar-video',
+        text: 'X',
+        click: function () {
+            $('#video-container').remove(); // Elimina el contenedor al hacer clic
+        }
+    });
+    // Crear barra deslizadora
+    var progressBar = $('<input />', {
+        type: 'range',
+        id: 'barra-deslizable',
+        min: '0',
+        max: '100',
+        value: '0',
+    });
+    // Agregar elementos al contenedor
+    videoContainer.append(elementosVideo.append(videoElement).append(closeButton).append(progressBar));
+
+    // Agregar el contenedor directamente al body
+    $('body').append(videoContainer);
+
+	agregarFuncionesVideo(videoElement, closeButton, progressBar);
+	
+}
+
+function agregarFuncionesVideo(videoElement, closeButton, progressBar) {
+    // Alternar play/pause al hacer clic en el video
+    videoElement.on("click", function() {
+        if (videoElement[0].paused) {
+            videoElement[0].play();
+        } else {
+            videoElement[0].pause();
+        }
+    });
+
+    // Cerrar el contenedor del video al hacer clic en la "X"
+    closeButton.on("click", function() {
+        $('#video-container').remove(); // Elimina completamente el div de la página
+    });
+
+    // Actualiza la barra de progreso mientras el video se reproduce
+    videoElement.on("timeupdate", function() {
+        const progreso = (videoElement[0].currentTime / videoElement[0].duration) * 100;
+        progressBar.val(progreso); // Actualiza la barra
+    });
+
+    // Permite que el usuario controle el video con el slider
+    progressBar.on("input", function() {
+        const nuevoTiempo = (progressBar.val() / 100) * videoElement[0].duration;
+        videoElement[0].currentTime = nuevoTiempo;
+    });
+
+    // Si el video no está reproduciéndose, al mover el slider se actualiza el video manualmente
+    progressBar.on("change", function() {
+        if (videoElement[0].paused) {
+            videoElement[0].play();
+        }
+    });
+}
 // Process the data of every region
 
 function processRegion(region, regionType) {
